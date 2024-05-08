@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS buổi 13</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <div class="container">
+    <div class="container_item mt-5">
+      <h1>Tính tiền lương nhân viên</h1>
+      <hr />
+      <div class="p_item">
+        <p class="mt-2 mb-3">Mô hình ba khối</p>
+        <p>Input: Số lương 1 ngày, số ngày làm</p>
+        <p>Output: Tổng tiền lương nhận được</p>
+        <p>Xử lý: Tổng tiền lương=Số lương 1 ngày * Số ngày làm</p>
+      </div>
+      <hr class="mb-4" />
+      <div class="row">
+        <div class="col-3">
+          <div class="form_item">
+            <div class="mb-3">
+              <input type="text" id="tienLuong1Ngay" placeholder="" />
+              <div class="cut"></div>
+              <label for="tienLuong1Ngay" class="place_holder"
+                >Tiền lương 1 ngày</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form_item">
+            <div class="mb-3">
+              <input type="text" id="soNgayLam" placeholder="" />
+              <div class="cut"></div>
+              <label for="soNgayLam" class="place_holder">Số ngày làm</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" id="btnBai1">Tính lương</button>
+      <hr />
+      <p class="mt-3 fs-4">Kết quả</p>
+      <div id="KetQua1" class="ketqua"></div>
+    </div>
+    <br />
+    <div class="container_item mt-5">
+      <h1>Tính giá trị trung bình</h1>
+      <hr />
+      <div class="p_item">
+        <p class="mt-2 mb-3">Mô hình ba khối</p>
+        <p>Input: 5 số thực ngẫu nhiên</p>
+        <p>Output: Giá trị trung bình của 5 số</p>
+        <p>Xử lý: Giá trị trung bình=(số 1 + số 2 + số 3 + số 4 + số 5) / 5</p>
+      </div>
+      <hr class="mb-4" />
+      <div class="row">
+        <div class="col-4">
+          <div class="form_item">
+            <div class="mb-3">
+              <input type="text" id="so1" placeholder="" />
+              <div class="cut"></div>
+              <label for="so1" class="place_holder">Nhập số thứ 1</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form_item">
+            <div class="mb-3">
+              <input type="text" id="so2" placeholder="" />
+              <div class="cut"></div>
+              <label for="so2" class="place_holder">Nhập số thứ 2</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form_item">
+            <div class="mb-3">
+              <input type="text" id="so3" placeholder="" />
+              <div class="cut"></div>
+              <label for="so3" class="place_holder">Nhập số thứ 3</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mt-3">
+          <div class="form_item">
+            <div class="mb-3">
+              <input type="text" id="so4" placeholder="" />
+              <div class="cut"></div>
+              <label for="so4" class="place_holder">Nhập số thứ 4</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mt-3">
+          <div class="form_item">
+            <div class="mb-3">
+              <input type="text" id="so5" placeholder="" />
+              <div class="cut"></div>
+              <label for="so5" class="place_holder">Nhập số thứ 5</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" id="btnBai2">
+        Tính giá trị trung bình
+      </button>
+      <hr />
+      <p class="mt-3 fs-4">Kết quả</p>
+      <div id="KetQua2" class="ketqua"></div>
+    </div>
+    <br />
+    <div class="container_item mt-5">
+      <h1>Quy đổi tiền từ USD qua VND</h1>
+      <hr />
+      <div class="p_item">
+        <p class="mt-2 mb-3">Mô hình ba khối</p>
+        <p>Input: Số lượng USD</p>
+        <p>Output: Số lượng VND đã được đổi từ USD</p>
+        <p>Xử lý: Giá trị quy đổi=Số lượng USD * 23.500VND (1USD=23.500VND)</p>
+      </div>
+      <hr class="mb-4" />
+      <div class="row">
+        <p class="mb-4">Giá trị quy đổi hiện nay: 1USD = 23.500VND</p>
+        <div class="col-3">
+          <div class="form_item">
+            <div class="mb-3">
+              <input type="text" id="tienUSD" placeholder="" />
+              <div class="cut"></div>
+              <label for="tienUSD" class="place_holder">Nhập số USD</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" id="btnBai3">Quy đổi tiền</button>
+      <hr />
+      <p class="mt-3 fs-4">Kết quả</p>
+      <div id="KetQua3" class="ketqua"></div>
+    </div>
+    <br />
+    <div class="container_item mt-5">
+      <h1>Tính diện tích, chu vi hình chữ nhật</h1>
+      <hr />
+      <div class="p_item">
+        <p class="mt-2 mb-3">Mô hình ba khối</p>
+        <p>Input: Chiều dài, chiều rộng</p>
+        <p>Output: Chu vi, diện tích hình chữ nhật</p>
+        <p>
+          Xử lý: Chu vi: (chiều dài + chiều rộng) / 2<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diện tích:
+          chiều dài * chiều rộng
+        </p>
+      </div>
+      <hr class="mb-4" />
+      <div class="row">
+        <div class="col-3">
+          <div class="form_item">
+            <div class="mb-3">
+              <input type="text" id="chieuDai" placeholder="" />
+              <div class="cut"></div>
+              <label for="chieuDai" class="place_holder">Chiều dài</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form_item">
+            <div class="mb-3">
+              <input type="text" id="chieuRong" placeholder="" />
+              <div class="cut"></div>
+              <label for="chieuRong" class="place_holder">Chiều rộng</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" id="btnBai4">Tính</button>
+      <hr />
+      <p class="mt-3 fs-4">Kết quả</p>
+      <div id="KetQua4" class="ketqua"></div>
+    </div>
+    <br />
+    <div class="container_item mt-5">
+      <h1>Tính tổng 2 ký số</h1>
+      <hr />
+      <div class="p_item">
+        <p class="mt-2 mb-3">Mô hình ba khối</p>
+        <p>Input: 2 số thực</p>
+        <p>Output: tổng 2 ký số của số vừa nhập</p>
+        <p>
+          Xử lý: tìm số đơn vị: số đã nhập % 10 (tìm ra số dư sau khi chia
+          10)<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;tìm số hàng chục:
+          lấy số đã nhập chia cho 10 rồi làm tròn số đó
+        </p>
+      </div>
+      <hr class="mb-4" />
+      <div class="row">
+        <div class="col-3">
+          <div class="form_item">
+            <div class="mb-3">
+              <input type="text" id="soThuc" placeholder="" />
+              <div class="cut"></div>
+              <label for="soThuc" class="place_holder">Nhập số</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" id="btnBai5">Tính tổng</button>
+      <hr />
+      <p class="mt-3 fs-4">Kết quả</p>
+      <div id="KetQua5" class="ketqua"></div>
+    </div>
+  </div>
+  <body>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
